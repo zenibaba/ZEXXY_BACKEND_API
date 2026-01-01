@@ -190,6 +190,40 @@ System statistics
 }
 ```
 
+### **POST /api/sync-stats**
+Sync user generation stats and rarity IDs from the app
+
+**Request:**
+```json
+{
+  "username": "testuser",
+  "hwid": "DEVICE-12345",
+  "stats": {
+    "generated": 10,
+    "success": 8,
+    "failed": 2
+  },
+  "rarity_ids": [
+    { "id": "123456789", "score": 7 },
+    { "id": "987654321", "score": 8 }
+  ]
+}
+```
+
+**Response:**
+```json
+{
+  "success": true,
+  "message": "Stats synced successfully",
+  "stats": {
+    "generated": 50,
+    "success": 45,
+    "failed": 5,
+    "last_sync": "2026-01-01T12:00:00Z"
+  }
+}
+```
+
 ---
 
 ## 🔒 Security

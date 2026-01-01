@@ -16,12 +16,13 @@ module.exports = async (req, res) => {
     return res.status(200).json({
         success: true,
         message: 'ZEXXY Backend API - GitHub Database',
-        version: '1.0.0',
+        version: '1.1.0',
         endpoints: {
             status: '/api/status',
             register: '/api/register (POST)',
             login: '/api/login (POST)',
-            broadcasts: '/api/broadcasts (POST)'
+            broadcasts: '/api/broadcasts (POST)',
+            syncStats: '/api/sync-stats (POST)'
         },
         repository: 'https://github.com/zenibaba/ZEXXY_KEYAUTH',
         documentation: 'https://github.com/zenibaba/ZEXXY_BACKEND_API'
