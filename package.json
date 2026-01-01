@@ -1,0 +1,17 @@
+{
+  "name": "zexxy-backend-api",
+  "version": "1.0.0",
+  "description": "ZEXXY Backend API with GitHub Database - Vercel Deployment",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "@vercel/node": "^3.0.0",
+    "cors": "^2.8.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
