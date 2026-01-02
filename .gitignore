@@ -1,5 +1,6 @@
 node_modules/
 .env
+.zexxy
 .vercel
 *.log
 .DS_Store
